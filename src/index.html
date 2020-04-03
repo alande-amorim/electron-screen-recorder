@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>⚡ Electron Screen Recorder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    <script defer src="render.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>⚡ Electron Screen Recorder</h1>
+
+      <div id="video-container">
+        <video></video>
+          <button class="button videoSelectBtn">
+            <span class="icon is-small">
+              <i class="fa fa-video-camera"></i>
+            </span>
+            <span>Choose video source</span>
+          </button>
+      </div>
+
+      <div id="controls-container" class="field has-addons">
+
+        <p class="control">
+          <button id="startBtn" class="button is-light" disabled>
+            <span class="icon is-small">
+              <i class="fa fa-circle"></i>
+            </span>
+          </button>
+        </p>
+
+        <p class="control">
+          <button id="stopBtn" class="button is-light" disabled>
+            <span class="icon is-small">
+              <i class="fa fa-stop"></i>
+            </span>
+          </button>
+        </p>
+
+        <p class="control">
+          <button class="button is-light videoSelectBtn">
+            <span class="icon is-small">
+              <i class="fa fa-video-camera"></i>
+            </span>
+          </button>
+        </p>
+      </div>
+    </div>
+
+    <code>
+      <h2>Instructions</h2>
+      <ol>
+        <li>Select a video source,</li>
+        <li>Click record,</li>
+        <li>When finished recording, click stop,</li>
+        <li>Select where to save the video,</li>
+        <li>You're done.</li>
+      </ol>
+    </code>
+
+  </body>
+</html>
